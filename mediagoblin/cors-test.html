@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org/1999/xhtml">
+    <head>
+        <title>GNU MediaGoblin CORS test</title>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="cors-test.js"></script>
+        <style>
+ul#images {
+    margin: 0px;
+    padding: 0px;
+}
+ul#images li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <p>Images from http://joar.pagekite.me fetched
+        via XMLHttpRequest level 2 &amp; CORS.
+        </p>
+        <p id="status">Waiting</p>
+        <ul id="images">
+        </ul>
+    </body>
+</html>
