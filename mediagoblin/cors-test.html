@@ -2,26 +2,20 @@
 <html xmlns="http://w3.org/1999/xhtml">
     <head>
         <title>GNU MediaGoblin CORS test</title>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="cors-test.js"></script>
-        <style>
-ul#images {
-    margin: 0px;
-    padding: 0px;
-}
-ul#images li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px;
-}
-        </style>
     </head>
     <body>
-        <p>Images from http://joar.pagekite.me fetched
-        via XMLHttpRequest level 2 &amp; CORS.
+        <p>Images from
+        <a href="http://gobblin.se">http://gobblin.se</a>
+        retrieved via
+        <a href="http://www.w3.org/TR/XMLHttpRequest/">XMLHttpRequest level 2</a>
+        &amp; <a href="http://www.w3.org/TR/cors/">CORS</a>.
         </p>
+        <input type="file" name="file" id="file" />
+        <input type="text" name="access_token" id="access_token" />
         <p id="status">Waiting</p>
         <ul id="images">
         </ul>
+        <script src="cors-test.js"></script>
+        <script src="oauth.js"></script>
     </body>
 </html>
